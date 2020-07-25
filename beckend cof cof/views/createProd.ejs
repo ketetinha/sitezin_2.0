@@ -1,0 +1,25 @@
+<%- include("./partials/header.ejs")%>
+
+
+<!-- Trocar o nome das classes HTML depois -->
+<div class="alinhando">
+    <div class="div-engloba-form">
+        <h1>Criar Produto</h1>
+        <form id="entrar" action="/create-product" method="POST">
+            <div class="email">   
+                <input type="text" name="title" placeholder="Título" required>
+            </div>
+            <input type="text" name="description" placeholder="Descrição">
+            <div class="pw">  
+                <input type="number" name="price" placeholder="Preço" min="0" required>
+            </div>
+            <div>
+                <button>Criar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<%- include("./partials/footer.ejs")%>

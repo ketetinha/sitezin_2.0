@@ -1,0 +1,23 @@
+<%- include("./partials/header.ejs")%>
+<div class="alinhando">
+    <div class="div-engloba-form">
+        <h1>Registrar</h1>
+        <form id="entrar" action="/registrar" method="POST">
+            <div class="firs">   
+                <input type="text" name="name" placeholder="Primeiro nome" required>
+                <input type="text" name="lastName" placeholder="Último nome" required>
+                <input type="email" name="username" placeholder="E-mail" required>
+            </div>
+            <div class="pw">  
+                <input type="password" name="password" placeholder="Senha" required>
+            </div>
+            <div class="pw">  
+                <input type="password" name="cpassword" placeholder="Confirmar senha" required>
+            </div>
+            <div>
+                <button>Registrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include("./partials/footer.ejs")%>
